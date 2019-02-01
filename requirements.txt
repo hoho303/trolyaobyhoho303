@@ -3,4 +3,4 @@ sklearn-crfsuite==0.3.6
 joblib==0.12.5
 gensim==3.5.0
 keras==2.2.4
-
+gunicorn==19.9.0
