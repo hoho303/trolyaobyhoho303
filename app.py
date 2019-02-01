@@ -27,7 +27,7 @@ def predict():
     if params is not None:
         x = pd.DataFrame.from_dict(params, orient='index').to_numpy(dtype=str).tolist()
         data["prediction"] = model.classify(sentences=x[0], label_dict=label_dict)[0]
-
+        data["success"] = "true"
     # return a response in json format
     return flask.jsonify(data)
 
